@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remember</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/2438/2438239.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="remember.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="mainscreen screen w-screen h-screen bg-zinc-800 font-[gilroy]"
+      id="main"
+    >
+      <div class="nav w-full h-50px flex p-5 place-content-between" id="navbar">
+        <h1 class="heading text-3xl font-[gilroy] text-white font-semibold">
+          Remember.
+        </h1>
+        <button
+          class="new w-40px h-10px rounded-md p-3 bg-teal-600 text-white font-semibold"
+          id="newbtn"
+        >
+          Make New Remember <i class="ri-add-line"></i>
+        </button>
+      </div>
+      <div
+        class="centerpart w-full h-5/6 flex items-center justify-center pb-24"
+        id="center"
+      >
+        <div
+          class="box w-50px h-15px box border-2 border-dotted border-gray-600 flex items-center justify-center p-4 rounded-md"
+          id="box"
+        >
+          <h1 class="files text-gray-500">No files here</h1>
+        </div>
+        <div class="cards flex gap-4 flex-wrap">
+          
+        </div>
+        <div
+          class="newremember w-[700px] hidden h-[430px] flex p-5 flex-col bg-zinc-500 rounded-md gap-3 z-40"
+          id="newrem"
+        >
+          <div class="flex place-content-between" id="head">
+            <h2 class="heading text-white font-semibold text-2xl">
+              Make New Remember
+            </h2>
+
+            <button id="clbtn">
+              <i class="ri-close-circle-fill text-white text-2xl"></i>
+            </button>
+          </div>
+          <div id="mid">
+            <form>
+              <input
+                id="title"
+                class="bg-zinc-800 w-full rounded-md p-2 text-zinc-200"
+                placeholder="Title"
+                type="text"
+              />
+            </form>
+          </div>
+          <div id="details">
+            <form>
+              <textarea
+                class="bg-zinc-800 rounded-md w-full h-60 p-2 text-zinc-200"
+                id="description"
+                type="text"
+                placeholder="Description"
+              ></textarea>
+            </form>
+          </div>
+          <div id="make">
+            <button
+              class="w-15px h-20px rounded-md p-3 bg-teal-600 text-black font-semibold"
+            >
+              Make
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="remember.js"></script>
+  </body>
+</html>
